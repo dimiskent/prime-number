@@ -19,8 +19,8 @@ public class Main {
     }
 
     public static int getUserInput() {
+        Scanner scanner = new Scanner(System.in);
         while(true) {
-            Scanner scanner = new Scanner(System.in);
             System.out.print("Enter a whole number: ");
             if(scanner.hasNextInt()) {
                 int myNumber = scanner.nextInt();
